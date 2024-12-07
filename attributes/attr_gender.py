@@ -1,12 +1,13 @@
 import random
 
 from .person import Person
+from .enums import Gender
 
-def assign_gender(person: Person):
+def assign_gender(person: Person, gender_ratio: float):
     # Define gender probabilities
     genders = {
-        "male": 0.49,
-        "female": 0.51
+        Gender.MALE: gender_ratio,
+        Gender.FEMALE: 1 - gender_ratio
     }
     
     # Generate a random number to pick a gender

@@ -39,5 +39,5 @@ class Person:
         
     
     def __repr__(self):
-        return f"{self.gender.ljust(10)} | {str(self.age).ljust(5)} | {str(self.marital_status.name).ljust(15)} | {str(self.residence).ljust(5)}"
+        return f"{str(self.gender).ljust(10)} | {str(self.age).ljust(5)} | {str(self.marital_status.name).ljust(15)} | {str(self.residence).ljust(5)}"
     

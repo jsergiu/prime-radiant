@@ -1,0 +1,14 @@
+body {
+    background-color: #f9f9f9;
+}
+.live-graph {
+    margin: auto;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#gender-ratio-slider {
+    width: 500px;
+}

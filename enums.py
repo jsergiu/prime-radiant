@@ -1,5 +1,13 @@
 from enum import Enum
 
+class Gender(Enum):
+    UNDEFINED = 0
+    MALE = 1
+    FEMALE = 2
+
+    def __str__(self):
+        return self.name.lower()
+
 class MaritalStatus(Enum):
     NEVER_MARRIED = 1
     MARRIED = 2

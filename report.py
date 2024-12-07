@@ -60,17 +60,7 @@ class Report:
         axes[1].set_ylabel("Number of People")
         self.add_labels_to_bars(axes[1], bars)
 
-        # Plot Rural vs Urban Distribution
-        bars = axes[2].bar(
-            rural_urban_distribution.keys(),
-            rural_urban_distribution.values(),
-            color="green",
-            edgecolor="black",
-        )
-        axes[2].set_title("Rural vs Urban Distribution")
-        axes[2].set_xlabel("Residence Type")
-        axes[2].set_ylabel("Number of People")
-        self.add_labels_to_bars(axes[2], bars)
+        
 
         # Plot Gender Distribution
         bars = axes[3].bar(

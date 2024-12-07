@@ -1,24 +1,22 @@
-import matplotlib.pyplot as plt
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
 from .enums import Gender
 import plotly.graph_objs as go
 from collections import Counter
-import random
 
 from .attributes.attr_age import assign_age
-from .attr_education import assign_education
-from .attr_employment import assign_employment
-from .attr_ethnicity import assign_ethnicity
-from .attr_gender import assign_gender
-from .attr_health import assign_health
-from .attr_income import assign_income
-from .attr_marital import assign_marital_status
-from .attr_residence import assign_residence
-from .attr_religion import assign_religion
-from .attr_political_affiliation import assign_political_affiliation
-from .attr_technology_use import assign_technology_use
+from .attributes.attr_education import assign_education
+from .attributes.attr_employment import assign_employment
+from .attributes.attr_ethnicity import assign_ethnicity
+from .attributes.attr_gender import assign_gender
+from .attributes.attr_health import assign_health
+from .attributes.attr_income import assign_income
+from .attributes.attr_marital import assign_marital_status
+from .attributes.attr_residence import assign_residence
+from .attributes.attr_religion import assign_religion
+from .attributes.attr_political_affiliation import assign_political_affiliation
+from .attributes.attr_technology_use import assign_technology_use
 
 from .person import Person
 
